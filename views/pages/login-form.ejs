@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header'); %> 
+    </header>
+    
+    <main>
+        <div class="login-form">
+            <h3>Login Form</h3>
+          <p><%=(typeof alertMsg!='undefined')? alertMsg:''%></p>
+          <form method="post" action="/login">
+                <input type="email" placeholder="Email Address" name="email_address" required">
+                <input type="password" placeholder="Password" name="password" required">
+                 <button type="submit">Login Now</button>
+                 <a href="/register">New Registration</a>
+            </div>
+          </form>
+          </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %> 
+    </footer>
+</body>
+</html>

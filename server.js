@@ -1,5 +1,13 @@
 const express = require('express');
+const session = require('express-session');
 const app = express();
+
+app.use(session({
+    secret: '123456cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 60000 }
+}));
 
 // set the view engine to ejs 
 app.set('view engine', 'ejs');
