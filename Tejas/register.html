@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <link href="stylesheet/styles_reg.css" rel="stylesheet" type="text/css">
+   <title> Login </title>
+ </head>
+ <body>
+	<div class="form-structor">
+			<div class="overlap">
+				<h2 class="form-title" id="login">Sign up</h2><br>
+				<div class="form-holder">
+                    <lable class="email"> Enter Email Address</lable>
+                    <input type="email" name="username" id="username" class="uname" placeholder="Username" /><br>
+                    <lable class="password"> Enter password</lable>
+                    <input type="password" name="password" id="password" class="pswd" placeholder="Password" /><br>
+                    <lable class="password"> Re-Enter password</lable>
+                    <input type="password" name="repassword" id="repassword" class="pswd" placeholder="Password" />
+				</div>
+				<button class="submit-btn" onclick="validate()">Register</button>
+			</div>
+	</div>
+</body>
+<script>
+    function validate(){
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const repass = document.getElementById("repassword").value;
+        if( password != repass){
+            /* show the bottom part of text feild in red to specify error */
+            var chgColor = document.getElementById("repassword");
+            chgColor.style.borderBottom = '3px solid red';
+            console.log("heer")
+        }
+    }
+</script>

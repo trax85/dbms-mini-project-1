@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <link href="../stylesheet/styles_qc.css" rel="stylesheet" type="text/css">
+   <title> Quiz Create </title>
+ </head>
+ <body>
+    <div class="Header">
+      <h1>Online Quiz</h1>
+    </div>
+    <!-- Top Nav Bar -->
+    <div class="topnav">
+     <a class="active" href="#home">Home</a>
+     <a class="logout" href="#about">Logout</a>
+    </div>
+ <div class="nav-wrap">
+    <!-- Side Nav -->
+    <nav class="main-nav" role="navigation">
+         <ul class="list-ul">
+           <li ><a class="list-text" href="#">About</a></li>
+           <li ><a class="list-active" href="#">Create Quiz</a></li>
+           <li ><a class="list-text" href="#">Quiz Results</a></li>
+         </ul>
+    </nav>
+   <!-- Start of Page Conetents -->
+   <div class="container-box">
+     <h1 class="page-heading">Type Question/Answer</h1>
+     <label class="qlable"for="fname">1.</label>
+     <input class="input-q"type="text" id="qname" name="qname" placeholder="Type Your Question here"><br></br>
+     <input class="input-op" type="text" id="op1" name="opname" placeholder="Option 1">
+     <label class="container">Answer
+      <input type="radio" checked="checked" name="radio">
+      <span class="checkmark"></span>
+     </label><br></br>
+     <input class="input-op" type="text" id="op2" name="opname" placeholder="Option 2">
+     <label class="container">Answer
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+     </label><br></br>
+     <input class="input-op" type="text" id="op3" name="opname" placeholder="Option 3">
+     <label class="container">Answer
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+     </label><br></br>
+     <input class="input-op" type="text" id="op4" name="opname" placeholder="Option 4">
+     <label class="container">Answer
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+     </label><br></br>
+     <input class="button-next" type="button" onclick="#"  value="Next"/>
+   </div>
+ </div>
+ </body>

@@ -1,0 +1,105 @@
+html,body {
+	position: relative;
+	min-height: 100vh;
+	background-color: #E1E8EE;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+.form-structor {
+    
+	background-color: #222;
+	border-radius: 15px;
+	height: 550px;
+	width: 350px;
+	position: relative;
+	overflow: hidden;
+	opacity: .8;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+    background-size: 400px;
+    background-image: url(IMG_bg.jpg);
+}
+
+.form-title{
+	margin-top: 10%;
+	color: #fff;
+		font-size: 1.7em;
+		text-align: center;
+		
+		span {
+			color: rgba(0,0,0,0.4);
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: all .3s ease;
+		}
+}
+.form-holder{
+	position: relative;
+	left: 15%;
+    margin-top: 10%;
+}
+.email{
+    z-index: 2;
+	position: absolute;
+	margin-top: -7%; 
+	padding-bottom: 2px;
+}
+.uname {
+    position: relative;
+    padding-top: 10px;
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	display: block;
+	height: 38px;
+	line-height: 30px;
+	padding: 8px;
+	border-bottom: 1px solid #eee;
+	width: 70%;
+	font-size: 14px;
+    border-radius: 5px;
+}
+.password{
+	position: absolute;
+	margin-top: -2%; 
+}
+.pswd{
+	margin-top:5%;
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	display: block;
+	height: 38px;
+	line-height: 30px;
+	padding: 8px;
+	border-bottom: 1px solid #eee;
+	width: 70%;
+	font-size: 14px;
+    border-radius: 5px;
+}
+.submit-btn {
+	background-color: #646A7F;
+	color: rgba(256,256,256,0.7);
+	border:0;
+	border-radius: 15px;
+	display: block;
+    margin-top: 10%;
+    margin-left: 15%;
+	padding: 15px 15px;
+	width: 70%;
+	font-size: 13px;
+	font-weight: bold;
+	cursor: pointer;
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: all .3s ease;
+}
+.submit-btn:hover {
+	transition: all .3s ease;
+	background-color: rgba(0,0,0,0.8);
+}
